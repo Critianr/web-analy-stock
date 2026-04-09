@@ -1,0 +1,82 @@
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--text1);
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--bg2);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.name {
+  font-family: var(--mono);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.status {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.under { background: rgba(0,212,170,0.12);  color: var(--accent); }
+.fair  { background: rgba(16,185,129,0.12); color: var(--green);  }
+.over  { background: rgba(244,63,94,0.12);  color: var(--red);    }
+
+.valueText {
+  font-family: var(--mono);
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.desc {
+  font-size: 12px;
+  color: var(--text3);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.interp {
+  font-size: 12px;
+  color: var(--text2);
+  line-height: 1.65;
+}
+
+.gauge {
+  height: 3px;
+  background: var(--bg3);
+  border-radius: 2px;
+  margin-top: 1.25rem;
+  overflow: hidden;
+}
+
+.gaugeFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.8s ease;
+}

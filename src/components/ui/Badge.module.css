@@ -1,0 +1,16 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.accent  { background: rgba(0,212,170,0.15);  color: var(--accent); }
+.blue    { background: rgba(59,130,246,0.15);  color: var(--accent2); }
+.amber   { background: rgba(245,158,11,0.15);  color: var(--accent3); }
+.green   { background: rgba(16,185,129,0.15);  color: var(--green); }
+.red     { background: rgba(244,63,94,0.15);   color: var(--red); }
+.gray    { background: rgba(255,255,255,0.06); color: var(--text2); }

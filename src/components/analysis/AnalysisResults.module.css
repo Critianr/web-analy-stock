@@ -1,0 +1,103 @@
+.container {
+  animation: fadeUp 0.4s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.companyName {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--text1);
+  margin-bottom: 6px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text3);
+  flex-wrap: wrap;
+}
+
+.ticker {
+  font-family: var(--mono);
+  color: var(--text2);
+  font-size: 12px;
+  background: var(--bg3);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.dot {
+  color: var(--border2);
+}
+
+.priceBlock {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.price {
+  font-family: var(--mono);
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text1);
+}
+
+.change {
+  font-family: var(--mono);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.pos { color: var(--green); }
+.neg { color: var(--red); }
+
+/* Metrics grid */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  margin-bottom: 1.75rem;
+}
+
+/* Horizon grid */
+.horizonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 1.75rem;
+}
+
+/* Disclaimer */
+.disclaimer {
+  font-size: 11px;
+  color: var(--text3);
+  line-height: 1.65;
+  padding: 1rem 1.25rem;
+  background: var(--bg2);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .header       { flex-direction: column; }
+  .priceBlock   { text-align: left; }
+  .horizonGrid  { grid-template-columns: 1fr; }
+}
